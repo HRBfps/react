@@ -1,17 +1,20 @@
 import './index.css';
-import Header from './components/header.jsx';
-import Caixa from './components/caixa.jsx';
-import Footer from './components/footer.jsx';
+import Foto from './components/foto.jsx';
 
 function App() {
+
+  let lista = ['fallen','kscerato','art']
+  const lista2 = lista.map(
+    (c) => <p>{c}</p>
+  )
+
   return (
-    <div class="body">
-      <Header serie="Dr.House"/>
-      <Caixa codigo="12" nome="dwajifwad" telefone="11111" endereco="na casa do caralo" cargo="house"/>
-      <Caixa codigo="11" nome="henri" telefone="123" endereco="123" cargo="pai"/>
-      <div class="confira">Confira os dados antes de efetuar a matrícula</div>
-      <Footer/>
+    <div>
+      <Foto codigo="1"/>
+      <Foto codigo="2"/>
+      <Foto codigo="3"/>
     </div>
+    
   );
 }
 
